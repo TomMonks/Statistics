@@ -1,0 +1,3 @@
+Class library for basic statistical summary and analysis of data.
+
+For example comparison of means using confidence intervals based on the Student t distribution.

@@ -1,0 +1,4 @@
+\\isad.isadroot.ex.ac.uk\UOE\User\Visual Studio 2012\Projects\Statistics\Statistics\bin\Debug\Statistics.dll
+\\isad.isadroot.ex.ac.uk\UOE\User\Visual Studio 2012\Projects\Statistics\Statistics\bin\Debug\Statistics.pdb
+\\isad.isadroot.ex.ac.uk\UOE\User\Visual Studio 2012\Projects\Statistics\Statistics\obj\Debug\Statistics.dll
+\\isad.isadroot.ex.ac.uk\UOE\User\Visual Studio 2012\Projects\Statistics\Statistics\obj\Debug\Statistics.pdb
