@@ -132,7 +132,7 @@ namespace Statistics.Comparisons.Parametric
 
         private double CriticalValue()
         {
-            if (this.DegreesOfFreedom < 120)
+            if (this.DegreesOfFreedom < 36)
             {
                 return TTable()[this.level][this.DegreesOfFreedom];
             }
