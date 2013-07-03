@@ -136,9 +136,10 @@ namespace Statistics.Descriptive
             this.data.Sort();
         }
 
-        public BasicStatistics(DataTable data, int index)
+        public BasicStatistics(DataTable data, int index = 0)
         {
             this.data = data.AsEnumerable().Select(x => Convert.ToDouble(x[index])).ToList();
+            this.data.Sort();
         }
 
         /// <summary>
