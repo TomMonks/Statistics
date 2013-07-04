@@ -76,6 +76,11 @@ namespace Statistics.Descriptive
         {
             get
             {
+                if(this.N < 3)
+                {
+                    throw new ArithmeticException("The median can only be calculated when there are at least 3 data points");
+                }
+
                 int mid = this.data.Count / 2;
                 return data[mid -1];
             }
@@ -176,7 +181,7 @@ namespace Statistics.Descriptive
         /// A percentile of the distribution
         /// </summary>
         /// <param name="p">A value between 0 and 1 e.g. 0.95 gives the 95th pecentile</param>
-        /// <returns></returns>
+        /// <returns>empirical percentile</returns>
         public double Percentile(double p)
         {
             if (p > 1 || p < 0)
@@ -191,7 +196,15 @@ namespace Statistics.Descriptive
             {
                 int point = (int)Math.Round(this.data.Count * p, MidpointRounding.AwayFromZero);
 
-                return this.data[point - 1];
+                if (point == 0)
+                {
+                    return this.data[point];
+                }
+                else
+                {
+                    return this.data[point - 1];
+                }
+
             }
         }
 
